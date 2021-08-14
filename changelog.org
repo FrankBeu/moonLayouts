@@ -1,0 +1,96 @@
+* Changelog
+All notable changes to this project will be documented in this file.
+The format is based on [[https://keepachangelog.com/en/1.0.0/][Keep a Changelog]], and this project adheres to [[https://semver.org/spec/v2.0.0.html][Semantic Versioning]].
+** layout
+*** Unreleased
+**** Added
+**** Changed
+**** Deprecated
+**** Removed
+**** Fixed
+**** Security
+*** 0.10 - 2021-08-17
+**** Changed
+- ~MOON~: move =ORYX= from ~lI8~ -> ~lI12~
+*** 0.9 - 2021-08-17
+**** Added
+- ~MEDIAMOUSE:~ add arrows
+- ~MEDIAMOUSE:~ add navigationKeys
+**** Changed
+- ~HUB/MOON~: =RESET= on ~lI11~
+**** Removed
+- ~ALLLAYERS~: remove unneeded keys
+**** Fixed
+- layerSelectors on ~RSTHD~ and ~HUB~
+*** 0.8 - 2021-08-17
+**** Changed
+- ~RSTHD:~ =TO9= - =OSL9=
+- ~SYMBOLS:~ change =.= =0=
+- xkbChange: ~RSTHD:~ switch =ALT-L= and =CMD-L=
+  in order to make the logiTechKeyboard useable again
+  "re"-switch on qmk again
+*** 0.7 - 2021-08-16
+**** Added
+- ~DIA~
+  for diacritica
+  currently empty needs qmk
+**** Removed
+- ~COLEMAK~
+*** 0.6 - 2021-08-16
+**** Added
+- =Indicator Toggle= on ~MOON~
+- layerSelectors =TT1= on ~{l,r}P9~
+- layerSelector =TO9= on ~rP10~
+- layerSelectors =OSL{6,7,8}= on ~lP{6,7,8}~
+**** Changed
+- add =SHIFT= to ~rT4~
+- Modifyer on ~QWERTY~ same as on ~RSTHD~
+- layerSelectors =TT= to =OSL=
+*** 0.5 - 2021-08-16
+**** Changed
+- =Hyper= to =Left Alt=
+**** Added
+- =LT 3= on ~rT2~
+*** 0.4 - 2021-08-15
+**** Changed
+- =Reset= on HUB
+- thumbClusters are the same on every layer
+*** 0.3 - 2021-08-15
+**** Changed
+- QWERTY: same thumb-layout like RSTHD
+- =Space= on seperate keys
+- =SHIFT= + =application=
+- =Esc= on right
+*** 0.2 - 2021-08-14
+**** Changed
+- change SUPER  to  L->QWERTY + SUPER
+   in order to avoid an unnecessary premature reconfiguration of i3
+- switch =E= and =SHIFT= avoid =E= + =␣= or =E= + =SHIFT= on same hand
+*** 0.1 - 2021-08-14
+****  Added
+- Add layer to navigate to all other layers
+  - +HUB
+*** 0.0 - 2021-08-14
+initial version
+****  Added
+- layers
+  - RSTHD
+  - QWERTY
+  - COLEMAK
+  - SYMBOLS
+  - MEDIA/MOUSE
+  - NUM
+  - MOON
+  - EMOJI
+  - F-KEYS
+** INFO
+*** types of changes
+**** ~Added~ for new features.
+**** ~Changed~ for changes in existing functionality.
+**** ~Deprecated~ for soon-to-be removed features.
+**** ~Removed~ for now removed features.
+**** ~Fixed~ for any bug fixes.
+**** ~Security~ in case of vulnerabilities.
+
+
+
