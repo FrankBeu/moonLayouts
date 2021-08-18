@@ -7,8 +7,15 @@ The format is based on [[https://keepachangelog.com/en/1.0.0/][Keep a Changelog]
 **** Changed
 **** Deprecated
 **** Removed
+- ~SYMBOLS:~ numbers
+   on own layer
 **** Fixed
 **** Security
+*** 0.11 - 2021-08-18
+**** Changed
+- ~THUMB:~ switch =TAB= and =BACKSPACE=
+**** Added
+- repeatable =BACKSPACE=
 *** 0.10 - 2021-08-17
 **** Changed
 - ~MOON~: move =ORYX= from ~lI8~ -> ~lI12~
@@ -91,6 +98,3 @@ initial version
 **** ~Removed~ for now removed features.
 **** ~Fixed~ for any bug fixes.
 **** ~Security~ in case of vulnerabilities.
-
-
-

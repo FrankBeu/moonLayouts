@@ -1,6 +1,8 @@
 * moonlander
 ** RULES
 *** THUMBS
+**** on all layers the same
+*** e
 **** e
 ***** NOT
 ****** on SWITCH
