@@ -8,9 +8,12 @@ The format is based on [[https://keepachangelog.com/en/1.0.0/][Keep a Changelog]
 **** Deprecated
 **** Removed
 - ~SYMBOLS:~ numbers
-   on own layer
+   numbers are already on own layer
 **** Fixed
 **** Security
+*** 0.12 - 2021-08-18
+**** Fixed
+- ~rT3~:  ALT-L again (xkbSwitch)
 *** 0.11 - 2021-08-18
 **** Changed
 - ~THUMB:~ switch =TAB= and =BACKSPACE=
