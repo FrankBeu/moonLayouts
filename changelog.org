@@ -9,6 +9,9 @@ The format is based on [[https://keepachangelog.com/en/1.0.0/][Keep a Changelog]
 **** Removed
 **** Fixed
 **** Security
+*** 0.2 - 2021-08-19
+**** Fixed
+- ~rT3~:  ALT-L again (xkbSwitch)
 *** 0.1 - 2021-08-19
 **** Changed
 - =BACKSPACE= on ~rT1~
