@@ -1,6 +1,25 @@
 * Changelog
 All notable changes to this project will be documented in this file.
 The format is based on [[https://keepachangelog.com/en/1.0.0/][Keep a Changelog]], and this project adheres to [[https://semver.org/spec/v2.0.0.html][Semantic Versioning]].
+** qwerty
+*** Unreleased
+**** Added
+**** Changed
+**** Deprecated
+**** Removed
+**** Fixed
+**** Security
+*** 0.1 - 2021-08-19
+**** Changed
+- =BACKSPACE= on ~rT1~
+- =TAB= on ~rT3~
+- ~HUB~: switch =TO= for =0= from *rM5* to *rR2*
+**** Fixed
+- ~HUB~: switch =TOs= for ~qwerty~ and ~rsthd~
+*** 0.0 - 2021-08-19
+based on layout 0.12
+**** Changed
+- switched ~qwerty~ and ~rsthd~
 ** layout
 *** Unreleased
 **** Added
@@ -27,7 +46,7 @@ The format is based on [[https://keepachangelog.com/en/1.0.0/][Keep a Changelog]
 - ~MEDIAMOUSE:~ add arrows
 - ~MEDIAMOUSE:~ add navigationKeys
 **** Changed
-- ~HUB/MOON~: =RESET= on ~lI11~
+- ~HUB/MOON~: =RESET= on *lI11*
 **** Removed
 - ~ALLLAYERS~: remove unneeded keys
 **** Fixed
