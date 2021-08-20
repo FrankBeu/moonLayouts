@@ -53,3 +53,19 @@ upperCase and in ~
 ~DIACRITICA~
 ~EMOJI~
 ~HUB~
+** INFO
+*** modifier vs layer
+modifier work on xkb
+layerSwitches on qmk
+** TODO TODOS
+*** create MIRROR
+*** change switches names to \**
+*** layer for words
+go
+python
+Rust
+Dart
+Flutter
+englisch
+deutsch
+
