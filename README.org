@@ -38,8 +38,8 @@ If you hold the key down, layer is activated, and then is de-activated when you 
 If you repeatedly tap it, the layer will be toggled on or off (like TG). 
 It needs 5 taps by default, but you can change this by defining TAPPING_TOGGLE -- for example, #define TAPPING_TOGGLE 2 to toggle on just two taps.
 *** switches
-in ~
-~{l,r}{T,I,M,R,P}{1,2,3,4,5,6,7,8,9,10,11,12}~
+in *
+*{l,r}{T,I,M,R,P}{1,2,3,4,5,6,7,8,9,10,11,12}*
 hand finger number-of-switch
 *** layers
 upperCase and in ~
