@@ -19,6 +19,9 @@ The format is based on [[https://keepachangelog.com/en/1.0.0/][Keep a Changelog]
 **** Removed
 **** Fixed
 **** Security
+*** 1.1 - 2021-08-30
+**** Fixed
+- move =OSL= on *rT* one key to the left
 *** 1.0 - 2021-08-30 - shrink layout
 **** Added
 - add =ESC= to *lT4*
