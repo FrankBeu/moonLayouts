@@ -57,6 +57,12 @@ upperCase and in ~
 *** modifier vs layer
 modifier work on xkb
 layerSwitches on qmk
+*** useCases
+**** =META=
+- emacs
+- firefox
+- chrome
+- Qt-Apps
 ** TODO TODOS
 *** create MIRROR
 *** change switches names to \**
@@ -68,4 +74,12 @@ Dart
 Flutter
 englisch
 deutsch
+*** remove altGr -> ~DIACRITICA~
+*** appConfig update
+- emacs
+- i3
+- less
+- ranger
+- revealjs
+- vim
 

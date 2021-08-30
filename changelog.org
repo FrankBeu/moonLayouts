@@ -4,7 +4,6 @@ The format is based on [[https://keepachangelog.com/en/1.0.0/][Keep a Changelog]
 ** qwerty
 *** Fundus
 **** Added
-- add =ESC= to *lT4*
 **** Changed
 **** Deprecated
 **** Removed
@@ -19,9 +18,26 @@ The format is based on [[https://keepachangelog.com/en/1.0.0/][Keep a Changelog]
 **** Deprecated
 **** Removed
 **** Fixed
+**** Security
+*** 1.0 - 2021-08-30 - shrink layout
+**** Added
+- add =ESC= to *lT4*
+- disable all audio
+**** Changed
+- =TAB= to *rT4*
+- decrease /Tapping Term/ from 200 -> 125
+- shrink layout
+**** Removed
+-   =ALT-GR= from *rT4*
+*** 0.4 - 2021-08-20
+**** Added
+**** Changed
+- *lT4*:  =APPLICATION= to =ESC=
+**** Deprecated
+**** Removed
+**** Fixed
 - *lT1*:  two taps: two backspaces
 **** Security
-*** 0.3 - 2021-08-19
 *** 0.3 - 2021-08-20
 **** Changed
 - *lT1*:  tapDance =SPACE= + =SUPER=
