@@ -22,6 +22,11 @@ The format is based on [[https://keepachangelog.com/en/1.0.0/][Keep a Changelog]
 **** Removed
 **** Fixed
 **** Security
+*** 1.5 - 2021-09-16
+**** Changed
+- increase =Mousekey max speed=
+    https://configure.zsa.io/moonlander/layouts/XW5OW/latest/config/mouse
+- ~MEDMOUSE~: switch =Acceleration0= and =Acceleration1=
 *** 1.4 - 2021-09-16
 **** Changed
 - ~SYMBOLS~: switch === and =;=
