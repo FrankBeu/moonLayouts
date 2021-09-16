@@ -12,6 +12,7 @@ The format is based on [[https://keepachangelog.com/en/1.0.0/][Keep a Changelog]
 - =ALT-GR=
   - independent from xkb (uses proximity to char on unmodified layer)
   - -> ~DIACRITICA~
+- ~qwerty~: remove layerSwitches on *{l,r}P[4-6]*
 **** Fixed
 **** Security
 *** Unreleased
@@ -21,6 +22,10 @@ The format is based on [[https://keepachangelog.com/en/1.0.0/][Keep a Changelog]
 **** Removed
 **** Fixed
 **** Security
+*** 1.4 - 2021-09-16
+**** Changed
+- ~SYMBOLS~: switch === and =;=
+- ~SYMBOLS~: switch =\=, =&=, =~= to =&=, =~=, =\=
 *** 1.3 - 2021-09-11
 **** Added
 - =;:= to ~SYMBOLS~
