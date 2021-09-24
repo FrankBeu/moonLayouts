@@ -22,6 +22,10 @@ The format is based on [[https://keepachangelog.com/en/1.0.0/][Keep a Changelog]
 **** Removed
 **** Fixed
 **** Security
+*** 1.7 - 2021-09-24
+**** Changed
+- swap
+   *lT1* =BS= -- *rT1* =SPC=
 *** 1.6 - 2021-09-17
 **** Changed
 - swap =CTRL= and =SUPER=
