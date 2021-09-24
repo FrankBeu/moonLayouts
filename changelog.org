@@ -22,6 +22,9 @@ The format is based on [[https://keepachangelog.com/en/1.0.0/][Keep a Changelog]
 **** Removed
 **** Fixed
 **** Security
+*** 1.9 - 2021-09-24
+**** Added
+   - doubleTab *lT2*: =SPC=
 *** 1.8 - 2021-09-24
 **** Changed
 - move
