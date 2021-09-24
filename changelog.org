@@ -22,6 +22,12 @@ The format is based on [[https://keepachangelog.com/en/1.0.0/][Keep a Changelog]
 **** Removed
 **** Fixed
 **** Security
+*** 1.8 - 2021-09-24
+**** Changed
+- move
+   =BS=: *lT1 -> *lT2*
+**** Fixed
+- double Tab =BS= on *lT2*
 *** 1.7 - 2021-09-24
 **** Changed
 - swap
