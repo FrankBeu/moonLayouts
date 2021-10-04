@@ -2,6 +2,8 @@
 ** RULES
 *** THUMBS
 **** on all layers the same
+**** =SPC= and =L3= on different Hands
+punctuation is alway surrounded by spaces
 *** e
 **** e
 ***** NOT

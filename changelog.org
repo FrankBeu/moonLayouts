@@ -7,6 +7,7 @@ The format is based on [[https://keepachangelog.com/en/1.0.0/][Keep a Changelog]
 - elipsis
 - bulletpoints
 **** Changed
+- =mousewheel=: increase speed
 **** Deprecated
 **** Removed
 - =ALT-GR=
@@ -22,6 +23,10 @@ The format is based on [[https://keepachangelog.com/en/1.0.0/][Keep a Changelog]
 **** Removed
 **** Fixed
 **** Security
+*** 1.10 - 2021-10-04
+**** Changed
+- swap
+   *lT2* =ENTER= -- *rT2* =S=
 *** 1.9 - 2021-09-24
 **** Added
    - doubleTab *lT2*: =SPC=
