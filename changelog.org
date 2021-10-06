@@ -23,6 +23,10 @@ The format is based on [[https://keepachangelog.com/en/1.0.0/][Keep a Changelog]
 **** Removed
 **** Fixed
 **** Security
+*** 1.12 - 2021-10-06
+**** Fixed
+-  *lT-- *rT1* =TO2= -> =LT2=
+    LT not available on tabdance
 *** 1.11 - 2021-10-06
 **** Changed
 *lT, *rT
