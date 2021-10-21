@@ -76,6 +76,11 @@ Flutter
 englisch
 deutsch
 *** remove altGr -> ~DIACRITICA~
+*** TODO sysRq
+:LOGBOOK:
+- State "TODO"       from              [2021-10-19 Tue 16:12]
+:END:
+https://en.wikipedia.org/wiki/Magic_SysRq_key
 *** appConfig update
 - emacs
 - i3

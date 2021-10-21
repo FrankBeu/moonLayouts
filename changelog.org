@@ -6,6 +6,7 @@ The format is based on [[https://keepachangelog.com/en/1.0.0/][Keep a Changelog]
 **** Added
 - elipsis
 - bulletpoints
+- ° to ~SYMBOLS~
 **** Changed
 - =mousewheel=: increase speed
 **** Deprecated
@@ -23,6 +24,15 @@ The format is based on [[https://keepachangelog.com/en/1.0.0/][Keep a Changelog]
 **** Removed
 **** Fixed
 **** Security
+*** 1.13 - 2021-10-19
+**** Changed
+- switch *lP4* *lP6* " and `
+- *lP2* tapdance
+   /1tap/:  =APP=
+   /2tap/:  =SysReq=
+- *lI6* =Backspace=
+**** Added
+- *lT2* Enter on DoubleTab
 *** 1.12 - 2021-10-06
 **** Fixed
 -  *lT-- *rT1* =TO2= -> =LT2=
