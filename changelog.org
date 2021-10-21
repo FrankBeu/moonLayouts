@@ -24,7 +24,15 @@ The format is based on [[https://keepachangelog.com/en/1.0.0/][Keep a Changelog]
 **** Removed
 **** Fixed
 **** Security
-*** 1.13 - 2021-10-19
+*** 1.14 - 2021-10-21
+**** Removed
+- *lP2* tapdance
+**** Changed
+- *lP1* tapdance
+   /1tap/:  =ESC=
+   /1hold/: =SHIFT=
+   /2tap/:  =ENTER=
+*** 1.13 - 2021-10-21
 **** Changed
 - switch *lP4* *lP6* " and `
 - *lP2* tapdance
