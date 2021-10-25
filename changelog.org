@@ -24,6 +24,26 @@ The format is based on [[https://keepachangelog.com/en/1.0.0/][Keep a Changelog]
 **** Removed
 **** Fixed
 **** Security
+*** 2.00 - 2021-10-24
+needs patching and qmk build
+**** Added
+- additional thumb key
+   =HandSwitch= on *{l,r}T2*
+   https://beta.docs.qmk.fm/using-qmk/software-features/feature_swap_hands
+**** Changed
+- numbering of thumb keys
+#+BEGIN_EXAMPLE org
+                           ┌────────────────┐                      ┌────────────────┐
+                           │                │                      │                │
+                           │     *lT1*      │                      │      *rT1*     │
+                           │                │                      │                │
+                           └────────────────┘                      └────────────────┘
+┌───────┐┌───────┐┌───────┐┌───────┐┌───────┐┌───────┐    ┌───────┐┌───────┐┌───────┐┌───────┐┌───────┐┌───────┐
+│       ││       ││       ││       ││       ││       │    │       ││       ││       ││       ││       ││       │
+│ *lT7* ││ *lT6* ││ *lT5* ││ *lT4* ││ *lT3* ││ *lT2* │    │ *rT2* ││ *rT3* ││ *rT4* ││ *rT5* ││ *rT6* ││ *rT7* │
+│       ││       ││       ││       ││       ││       │    │       ││       ││       ││       ││       ││       │
+└───────┘└───────┘└───────┘└───────┘└───────┘└───────┘    └───────┘└───────┘└───────┘└───────┘└───────┘└───────┘
+#+END_EXAMPLE
 *** 1.14 - 2021-10-21
 **** Removed
 - *lP2* tapdance

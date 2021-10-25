@@ -1,3 +1,4 @@
+#+PROPERTY: header-args  :session README
 * moonlander
 ** RULES
 *** THUMBS
@@ -16,28 +17,28 @@ punctuation is alway surrounded by spaces
 upperCase and in =
 **** layers
 ***** MO(layer)
-momentarily activates layer. 
+momentarily activates layer.
 As soon as you let go of the key, the layer is deactivated.
 ***** LM(layer, mod)
-Momentarily activates layer (like MO), but with modifier(s) mod active. 
-Only supports layers 0-15 and the left modifiers: MOD_LCTL, MOD_LSFT, MOD_LALT, MOD_LGUI (note the use of MOD_ constants instead of KC_). 
+Momentarily activates layer (like MO), but with modifier(s) mod active.
+Only supports layers 0-15 and the left modifiers: MOD_LCTL, MOD_LSFT, MOD_LALT, MOD_LGUI (note the use of MOD_ constants instead of KC_).
 These modifiers can be combined using bitwise OR, e.g. LM(_RAISE, MOD_LCTL | MOD_LALT).
 ***** LT(layer, kc)
-momentarily activates layer when held, and sends kc when tapped. 
+momentarily activates layer when held, and sends kc when tapped.
 Only supports layers 0-15.
 ***** OSL(layer)
-momentarily activates layer until the next key is pressed. 
+momentarily activates layer until the next key is pressed.
 See One Shot Keys for details and additional functionality.
 ***** TG(layer)
 toggles layer, activating it if it's inactive and vice versa
 ***** TO(layer)
-activates layer and de-activates all other layers (except your default layer). 
-This function is special, because instead of just adding/removing one layer to your active layer stack, it will completely replace your current active layers, uniquely allowing you to replace higher layers with a lower one. 
+activates layer and de-activates all other layers (except your default layer).
+This function is special, because instead of just adding/removing one layer to your active layer stack, it will completely replace your current active layers, uniquely allowing you to replace higher layers with a lower one.
 This is activated on keydown (as soon as the key is pressed).
 ***** TT(layer)
-Layer Tap-Toggle. 
-If you hold the key down, layer is activated, and then is de-activated when you let go (like MO). 
-If you repeatedly tap it, the layer will be toggled on or off (like TG). 
+Layer Tap-Toggle.
+If you hold the key down, layer is activated, and then is de-activated when you let go (like MO).
+If you repeatedly tap it, the layer will be toggled on or off (like TG).
 It needs 5 taps by default, but you can change this by defining TAPPING_TOGGLE -- for example, #define TAPPING_TOGGLE 2 to toggle on just two taps.
 *** switches
 in *
@@ -64,6 +65,99 @@ layerSwitches on qmk
 - firefox
 - chrome
 - Qt-Apps
+** qmk
+https://github.com/zsa/qmk_firmware/
+*** setup
+**** create envrc
+=./qmk_firmware/.envrc=
+**** enter =qmk_firmware=
+**** install submodules
+#+BEGIN_SRC shell :results drawer
+  make git-submodule
+#+END_SRC
+*** create new layout
+**** create folders for new version
+#+BEGIN_SRC python :results output drawer pp :file README.py
+
+  import os
+  import glob
+  import pathlib
+
+  sources = glob.glob('./layouts/qwerty/*/*/unzipped/moonlander_qwerty_source')
+  src =  sources[-1]
+  version = src.replace('./layouts/qwerty', '').replace('/unzipped/moonlander_qwerty_source', '').lstrip('/')
+  current_minor_version = version[-1]
+  new_minor_version = str(int(current_minor_version) + 1)
+  src_tpl = src.rpartition(current_minor_version)
+  dst = ''.join(src_tpl[0] + new_minor_version + '/unzipped')
+
+  print(f'{src=}\n{version=}\n{current_minor_version=}\n{new_minor_version=}\n{dst=}')
+  pathlib.Path(dst).mkdir(parents=True, exist_ok=True)
+
+#+END_SRC
+
+#+RESULTS:
+: src='./layouts/qwerty/2/0/unzipped/moonlander_qwerty_source'
+: version='2/0'
+: current_minor_version='0'
+: new_minor_version='1'
+: dst='./layouts/qwerty/2/1/unzipped'
+
+**** download sources + print from oryx
+
+**** patch
+***** newest rules.mk
+
+#+BEGIN_EXAMPLE shell
+sd "SRC = matrix.c" "SRC = matrix.c\n\nSWAP_HANDS_ENABLE = yes" $(exa -1r $(fd -p -g '**/unzipped/moonlander_qwerty_source/rules.mk') | head -n1)
+#+END_EXAMPLE
+
+***** handSwitches
+
+works only from cli
+#+BEGIN_EXAMPLE shell
+sd "KC_CAPSLOCK" "SH_MON" $(exa -1r $(fd -p -g '**/unzipped/moonlander_qwerty_source/keymap.c') | head -n1)
+#+END_EXAMPLE
+
+**** link sources
+
+#+BEGIN_SRC python :results output drawer pp :file README.py
+  import os
+  import glob
+
+  sources = glob.glob('./layouts/qwerty/*/*/unzipped/moonlander_qwerty_source')
+  # path = glob.glob('./layouts/qwerty/*/*/')
+  src =  sources[-1]
+  version = src.replace('./layouts/qwerty', '').replace('/unzipped/moonlander_qwerty_source', '').replace('/','.').lstrip('.')
+  dst = f'./qmk_firmware/keyboards/moonlander/keymaps/{version}'
+  rel_path_src = os.path.relpath(src, os.path.dirname(dst))
+  os.symlink(rel_path_src, dst)
+  print(src, version, dst, sep='\n')
+  # all_folders = os.listdir(path[-1])
+  # print(all_folders)
+  # all_folders.sort()
+  # latest = all_folders[-1].replace('ID', '')
+  # new = int(latests) + 1
+  # os.makedirs('ID'+str(latest))
+#+END_SRC
+
+#+RESULTS:
+: ./layouts/qwerty/2/1/unzipped/moonlander_qwerty_source
+: 2.1
+: ./qmk_firmware/keyboards/moonlander/keymaps/2.1
+
+**** build
+
+#+BEGIN_EXAMPLE shell
+  make moonlander:VERSION
+#+END_EXAMPLE
+
+**** copy
+from =./qmk_firmware/moonlander_VERSION.bin= to
+=./layouts/VERSION_PATH=
+
+**** flash
+wally-cli
 ** TODO TODOS
 *** create MIRROR
 *** change switches names to \**
@@ -88,4 +182,3 @@ https://en.wikipedia.org/wiki/Magic_SysRq_key
 - ranger
 - revealjs
 - vim
-
