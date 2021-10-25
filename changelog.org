@@ -24,6 +24,10 @@ The format is based on [[https://keepachangelog.com/en/1.0.0/][Keep a Changelog]
 **** Removed
 **** Fixed
 **** Security
+*** 2.01 - 2021-10-25
+**** Removed
+- *lP1* =ENTER=
+   because of delayed responses
 *** 2.00 - 2021-10-24
 needs patching and qmk build
 **** Added
