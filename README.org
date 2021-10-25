@@ -97,11 +97,11 @@ https://github.com/zsa/qmk_firmware/
 #+END_SRC
 
 #+RESULTS:
-: src='./layouts/qwerty/2/0/unzipped/moonlander_qwerty_source'
-: version='2/0'
-: current_minor_version='0'
-: new_minor_version='1'
-: dst='./layouts/qwerty/2/1/unzipped'
+: src='./layouts/qwerty/2/1/unzipped/moonlander_qwerty_source'
+: version='2/1'
+: current_minor_version='1'
+: new_minor_version='2'
+: dst='./layouts/qwerty/2/2/unzipped'
 
 **** download sources + print from oryx
 
@@ -121,7 +121,7 @@ sd "KC_CAPSLOCK" "SH_MON" $(exa -1r $(fd -p -g '**/unzipped/moonlander_qwerty_so
 
 **** link sources
 
-#+BEGIN_SRC python :results output drawer pp :file README.py
+#+BEGIN_SRC python :results output drawer :file README.py
   import os
   import glob
 
@@ -139,12 +139,12 @@ sd "KC_CAPSLOCK" "SH_MON" $(exa -1r $(fd -p -g '**/unzipped/moonlander_qwerty_so
   # latest = all_folders[-1].replace('ID', '')
   # new = int(latests) + 1
   # os.makedirs('ID'+str(latest))
+  print(f'make moonlander:{version}')
 #+END_SRC
 
 #+RESULTS:
-: ./layouts/qwerty/2/1/unzipped/moonlander_qwerty_source
-: 2.1
-: ./qmk_firmware/keyboards/moonlander/keymaps/2.1
+:results:
+:end:
 
 **** build
 
@@ -159,7 +159,6 @@ from =./qmk_firmware/moonlander_VERSION.bin= to
 **** flash
 wally-cli
 ** TODO TODOS
-*** create MIRROR
 *** change switches names to \**
 *** layer for words
 go
@@ -182,3 +181,5 @@ https://en.wikipedia.org/wiki/Magic_SysRq_key
 - ranger
 - revealjs
 - vim
+** ERLEDIGTES
+*** create MIRROR

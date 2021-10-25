@@ -24,6 +24,12 @@ The format is based on [[https://keepachangelog.com/en/1.0.0/][Keep a Changelog]
 **** Removed
 **** Fixed
 **** Security
+*** 2.02 - 2021-10-25
+**** Fixed
+- *lP1* remove unnec. tabdance
+  use dualKey instead
+- *lP4* remove unnec. tabdance
+  use dualKey instead
 *** 2.01 - 2021-10-25
 **** Removed
 - *lP1* =ENTER=
